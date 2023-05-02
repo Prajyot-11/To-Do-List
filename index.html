@@ -2,35 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List Web App</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" >
-    
-    
-</head>
-<body>
+    <meta name="theme-color" content="#062e3f">
+    <meta name="Description" content="A dynamic and aesthetic To-Do List WebApp.">
 
-<h1 class="title">
-    To-Do List Web App
-</h1>
-<div class="todo">
-    <div class="head"> 
-        <input type="text" class="text">
-        <button class="add"> Add Task </button>
+    <!-- Google Font: Quick Sand -->
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+
+    <link rel="shortcut icon" type="image/png" href="images/todo.png"/>
+    <link rel="stylesheet" href="main.css">
+    <title>To Do List</title>
+
+</head>
+
+<body>
+    <div id = "header">
+        <div class="flexrow-container">
+            <div class="standard-theme theme-selector"></div>
+            <div class="light-theme theme-selector"></div>
+            <div class="darker-theme theme-selector"></div>
+        </div>
+        <h1 id="title">To Do List.<div id="border"></div></h1>
     </div>
-<div class="task">
-   <!-- <div class="item">
-        <p>new item here</p>
-            <div class="itembtn">
-                <i  class="fa-solid fa-pen"></i>
-                <i  class="fa-solid fa-trash"></i>
-            </div>
-        </div> -->
+
+  <div id="form">
+        <form>
+            <input class="todo-input" type="text" placeholder="Add New Task . . .">
+            <button class="todo-btn" type="submit">ADD TASK</button>
+        </form>
     </div>
+
     
-</div>
-    <script src="app.js"></script>
+        <p><span id="datetime"></span></p>
+        <script src="JS/time.js"></script>
+    </div>
+
+  <div id="myUnOrdList">
+        <ul class="todo-list">
+            
+        </ul>
+    </div>
+    <script src="JS/main.js" type="text/javascript"> </script>
 </body>
-</html> 
+</html>
